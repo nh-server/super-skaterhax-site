@@ -50,7 +50,7 @@ $('#download').on('click', function() {
   var region = $('.region').children('.selected').attr('id');
   var firmware_ = $('.firmware').children('.selected').attr('id');
 
-  var base = "../"; //This should obviously be updated when/if it goes live.
+  var base = "https://github.com/ManiacOfGitHub/super-skaterhax-site/raw/master";
   var filename = "super-skaterhax-{0}-{1}.zip".format(region, firmware_);
   window.location.href = base + filename;
 });
