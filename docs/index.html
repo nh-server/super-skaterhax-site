@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>super-skaterhax | Nintendo Hacking 2024-2024</title>
+  <meta name="description" content="Soundhax - Free Nintendo 3DS Homebrew Primary Entrypoint">
+  <meta name="Lois" content="A designer who codes for fun.">
+  <link rel="icon"
+      type="img/logo"
+      href="img/Logo.jpg">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <def class="logo">
+    <img src="img/Logo.jpg" alt="logo">
+  </def>
+
+  <def class="text">
+    <img src="img/Text.png" alt="soundhax text">
+  </def>
+
+  <def class="downloads">
+    <div class="btn-group region">
+      <p>Choose a region:</p>
+      <button class="group" id="usa">USA</button>
+      <button class="group ej" id="eur">EUR</button>
+      <button class="group ej" id="jpn">JPN</button>
+      <button class="group" id="kor">KOR</button>
+    </div>
+    <div class="btn-group firmware">
+      <p>Choose firmware:</p>
+      <p>If your firmware is not listed, it is not compatible with super-skaterhax.</p>
+      <button class="group no_ej" id="pre17">11.15 - 11.16</button>
+      <button class="group no_kor no_ej" id="v11.17">11.17</button>
+      <button class="group only_ej" id="all" style="display:none;">11.15 - 11.17</button>
+    </div>
+    <button id="download" class="round" href="poop">Download ZIP</button>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="form1">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="6JJ8B2DMB9GUE" />
+    </form>
+
+    <button type="submit" form="form1" value="DONATE" class="round donate">Donate</button>
+  </def>
+
+  <def class="graphics">
+    <img src="img/BottomGraphics.png" alt="bottom graphics">
+  </def>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89595372-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
