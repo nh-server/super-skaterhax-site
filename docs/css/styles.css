@@ -7,7 +7,7 @@ body {
     margin-right: auto;
     width: 10%;
     display: block;
-    margin-top: 4%;
+    margin-top: 3%;
     border-radius: 30%;
 }
 
@@ -16,7 +16,7 @@ body {
     margin-right: auto;
     width: 30%;
     display: block;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .graphics img{
@@ -31,7 +31,9 @@ body {
 /*.downloads {
   padding-top: 5%;
 }*/
-
+a {
+  color: gray!important;
+}
 
 button.donate {
   margin-top: 10px;
@@ -130,13 +132,17 @@ button#download{
   border-radius: 2px;
 }
 
+.center {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) {
   .logo img{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     display: block;
-    padding-top: 4%;
+    padding-top: 3%;
 
   }
 
@@ -145,7 +151,7 @@ button#download{
     margin-right: auto;
     width: 80%;
     display: block;
-    padding-top: 5%;
+    padding-top: 3%;
   }
 
   .graphics img{
