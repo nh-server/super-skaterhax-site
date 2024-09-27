@@ -1,53 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <title>super-skaterhax AIO generator</title>
+    <meta name="description" content="super-skaterhax AIO generator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-  <title>super-skaterhax AIO generator</title>
-  <meta name="description" content="super-skaterhax AIO generator">
-  <link rel="icon"
-      type="img/logo"
-      href="img/Logo.jpg">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-
-  <def class="text">
-    <img src="img/Text.png" alt="soundhax text" title="funni logo text created by Tophatted">
-  </def>
-
-  <def class="downloads">
-    <div class="btn-group region">
-      <p>Choose a region:</p>
-      <button class="group" id="usa">USA</button>
-      <button class="group ej" id="eur">EUR</button>
-      <button class="group ej" id="jpn">JPN</button>
-      <button class="group" id="kor">KOR</button>
+  <body>
+    <div class="py-4 my-4 text-center header">
+      <h1 class="fs-1 fw-bold title">super-skaterhax</h1>
     </div>
-    <div class="btn-group firmware">
-      <p>Choose firmware:</p>
-      <p>If your firmware is not listed, it is not compatible with super-skaterhax.</p>
-      <button class="group no_ej" id="pre17">11.15 - 11.16</button>
-      <button class="group no_kor no_ej" id="v11.17">11.17</button>
-      <button class="group only_ej" id="all" style="display:none;">11.15 - 11.17</button>
-    </div>
-    <button id="download" class="round" href="poop">Download ZIP</button>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Select region and firmware</h4>
+        </div>
+        <div class="card-body">
+          <h5>Region</h5>
+          <div class="btn-group region">
+            <input type="radio" class="btn-check" name="region" id="usa">
+            <label class="btn btn-outline-primary" for="usa">USA</label>
 
-    <p class="center">
-      "Created" by <a href="https://github.com/ManiacOfGitHub">ManiacOfGitHub</a> (mostly stolen code :P)<br><br>
-      Thanks to <a href="https://github.com/nedwill">nedwill</a> for making <a href="https://soundhax.com">the Soundhax site</a>.<br><br>
+            <input type="radio" class="btn-check ej" name="region" id="eur">
+            <label class="btn btn-outline-primary" for="eur">EUR</label>
+
+            <input type="radio" class="btn-check ej" name="region" id="jpn">
+            <label class="btn btn-outline-primary" for="jpn">JPN</label>
+
+            <input type="radio" class="btn-check" name="region" id="kor">
+            <label class="btn btn-outline-primary" for="kor">KOR</label>
+          </div>
+          <hr>
+          <h5>System Firmware</h5>
+          <div class="firmware">
+            <input type="radio" class="btn-check no_ej" name="firmware" id="pre17">
+            <label class="btn btn-outline-primary no_ej" for="pre17">11.15 - 11.16</label>
+
+            <input type="radio" class="btn-check no_kor no_ej" name="firmware" id="v11.17">
+            <label class="btn btn-outline-primary no_kor no_ej" for="v11.17">11.17</label>
+
+            <input type="radio" class="btn-check only_ej" name="firmware" id="all" style="display:none;">
+            <label class="btn btn-outline-primary only_ej" for="all" style="display: none;">11.15 - 11.17</label>
+          </div>
+          <p class="pt-3">If your firmware is not listed, it is not compatible with super-skaterhax.</p>
+        </div>
+      </div>
+      
+      <div class="card mt-3">
+        <div class="card-body">
+          <button id="download" class="btn btn-secondary w-100 disabled">Download ZIP</button>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center position-fixed bottom-0 w-100 p-1">
+      Site created by <a href="https://github.com/ManiacOfGitHub">ManiacOfGitHub</a><br><br>
       Thanks to <a href="https://github.com/zoogie">zoogie</a> for making super-skaterhax.
-    </p>
-  </def>
-
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
+    </footer>
+    <div id="background"></div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

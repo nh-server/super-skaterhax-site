@@ -1,0 +1,25 @@
+body {
+    background-color: #303030;
+}
+#background {
+    background-size: 5%;
+    background-image: url(../img/background-tile.png);
+    position: fixed;
+    top: -50vh;
+    left: -50vw;
+    width: 250vw;
+    height: 250vh;
+    z-index: -1;
+    opacity: 15%;
+    transform: rotate(21deg);
+    overflow: hidden;
+}
+.header {
+    margin-top: 0!important;
+    background-color: #3BBDF950;
+    top: 0;
+}
+.title {
+    color: #0D8FFF;
+    text-shadow: 2px 2px #404040;
+}
