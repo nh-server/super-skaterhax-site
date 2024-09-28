@@ -12,55 +12,58 @@
   </head>
 
   <body>
-    <div class="py-4 my-4 text-center header">
-      <h1 class="fs-1 fw-bold title">super-skaterhax</h1>
-    </div>
-    <div class="container">
-      <div class="card">
-        <div class="card-header">
-          <h4 class="card-title">Select region and firmware</h4>
-        </div>
-        <div class="card-body">
-          <h5>Region</h5>
-          <div class="btn-group region">
-            <input type="radio" class="btn-check" name="region" id="usa">
-            <label class="btn btn-outline-primary" for="usa">USA</label>
-
-            <input type="radio" class="btn-check ej" name="region" id="eur">
-            <label class="btn btn-outline-primary" for="eur">EUR</label>
-
-            <input type="radio" class="btn-check ej" name="region" id="jpn">
-            <label class="btn btn-outline-primary" for="jpn">JPN</label>
-
-            <input type="radio" class="btn-check" name="region" id="kor">
-            <label class="btn btn-outline-primary" for="kor">KOR</label>
-          </div>
-          <hr>
-          <h5>System Firmware</h5>
-          <div class="firmware">
-            <input type="radio" class="btn-check no_ej" name="firmware" id="pre17">
-            <label class="btn btn-outline-primary no_ej" for="pre17">11.15 - 11.16</label>
-
-            <input type="radio" class="btn-check no_kor no_ej" name="firmware" id="v11.17">
-            <label class="btn btn-outline-primary no_kor no_ej" for="v11.17">11.17</label>
-
-            <input type="radio" class="btn-check only_ej" name="firmware" id="all" style="display:none;">
-            <label class="btn btn-outline-primary only_ej" for="all" style="display: none;">11.15 - 11.17</label>
-          </div>
-          <p class="pt-3">If your firmware is not listed, it is not compatible with super-skaterhax.</p>
-        </div>
+    <div class="flex-wrapper">
+      <div class="py-4 my-4 text-center header">
+        <h1 class="fs-1 fw-bold title">super-skaterhax</h1>
       </div>
-      
-      <div class="card mt-3">
-        <div class="card-body">
-          <button id="download" class="btn btn-secondary w-100 disabled">Download ZIP</button>
+      <main class="container">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Select region and firmware</h4>
+          </div>
+          <div class="card-body">
+            <h5>Region</h5>
+            <div class="btn-group region">
+              <input type="radio" class="btn-check" name="region" id="usa">
+              <label class="btn btn-outline-primary" for="usa">USA</label>
+
+              <input type="radio" class="btn-check ej" name="region" id="eur">
+              <label class="btn btn-outline-primary" for="eur">EUR</label>
+
+              <input type="radio" class="btn-check ej" name="region" id="jpn">
+              <label class="btn btn-outline-primary" for="jpn">JPN</label>
+
+              <input type="radio" class="btn-check" name="region" id="kor">
+              <label class="btn btn-outline-primary" for="kor">KOR</label>
+            </div>
+            <hr>
+            <h5>System Firmware</h5>
+            <div class="firmware">
+              <input type="radio" class="btn-check no_ej" name="firmware" id="pre17">
+              <label class="btn btn-outline-primary no_ej" for="pre17">11.15 - 11.16</label>
+
+              <input type="radio" class="btn-check no_kor no_ej" name="firmware" id="v11.17">
+              <label class="btn btn-outline-primary no_kor no_ej" for="v11.17">11.17</label>
+
+              <input type="radio" class="btn-check only_ej" name="firmware" id="all" style="display:none;">
+              <label class="btn btn-outline-primary only_ej" for="all" style="display: none;">11.15 - 11.17</label>
+            </div>
+            <p class="pt-3">If your firmware is not listed, it is not compatible with super-skaterhax.</p>
+          </div>
         </div>
+        
+        <div class="card mt-3">
+          <div class="card-body">
+            <button id="download" class="btn btn-secondary w-100 disabled">Download ZIP</button>
+          </div>
+        </div>
+      </main>
+
+      <div class="text-center w-100 p-3 footer">
+        Site created by <a href="https://github.com/ManiacOfGitHub">ManiacOfGitHub</a><br><br>
+        Thanks to <a href="https://github.com/zoogie">zoogie</a> for making super-skaterhax.
       </div>
     </div>
-    <footer class="text-center position-fixed bottom-0 w-100 p-1">
-      Site created by <a href="https://github.com/ManiacOfGitHub">ManiacOfGitHub</a><br><br>
-      Thanks to <a href="https://github.com/zoogie">zoogie</a> for making super-skaterhax.
-    </footer>
     <div id="background"></div>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>

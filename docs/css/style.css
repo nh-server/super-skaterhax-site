@@ -19,7 +19,16 @@ body {
     background-color: #3BBDF950;
     top: 0;
 }
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 .title {
     color: #0D8FFF;
     text-shadow: 2px 2px #404040;
+}
+.footer {
+    margin-top: auto;
 }
